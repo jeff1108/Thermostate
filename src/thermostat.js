@@ -10,3 +10,8 @@ Thermostat.prototype.up = function (degrees) {
   this._temperature += degrees
   return this._temperature
 }
+
+Thermostat.prototype.down = function (degrees) {
+  this._temperature -= degrees
+  return this._temperature
+}

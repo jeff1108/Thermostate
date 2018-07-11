@@ -22,5 +22,9 @@ describe('Thermostat', () => {
     it('decreases the temp', () => {
       expect(thermostat.down(1)).toEqual(19)
     });
+    it('error when lower than the minimum degree')
+      expect(function() {thermostat.down(11)}).toThrow(new Error "Lower than minimum degree")
   });
+
+
 });
