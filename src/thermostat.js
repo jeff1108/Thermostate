@@ -47,3 +47,7 @@ Thermostat.prototype.turnOffPowerSave = function () {
   this._maximum = MAXIMUM_TEMPERATURE
   this._powerSave = false
 }
+
+Thermostat.prototype.reset = function () {
+  this._temperature = 20
+}

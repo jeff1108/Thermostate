@@ -25,6 +25,7 @@ describe('Thermostat', () => {
     });
     describe('when power saving mode is off', () => {
       it('should have a maximum temperature of 32', () => {
+        thermostat.turnOffPowerSave()
         thermostat.up(12)
         expect(function(){thermostat.up(1)}).toThrow(new Error('Maximum temperature is 32.'))
       });
@@ -48,6 +49,20 @@ describe('Thermostat', () => {
       thermostat.down(4)
       thermostat.reset()
       expect(thermostat.temp()).toEqual(20)
+    });
+  });
+
+  describe('.current_usage', () => {
+    it('show energy usage', () => {
+      thermostat.reset()
+      thermostat.down(3)
+      expect(thermostat.current_usage()).toEqual('Low usage')
+      thermostat.reset()
+      thermostat.up(2)
+      expect(thermostat.current_usage()).toEqual('Medium usage')
+      thermostat.reset()
+      thermostat.up(6)
+      expect(thermostat.current_usage()).toEqual('High usage')
     });
   });
 });
