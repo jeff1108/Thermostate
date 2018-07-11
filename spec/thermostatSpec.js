@@ -53,16 +53,18 @@ describe('Thermostat', () => {
   });
 
   describe('.current_usage', () => {
-    it('show energy usage', () => {
-      thermostat.reset()
+    it('shows low usage', () => {
       thermostat.down(3)
-      expect(thermostat.current_usage()).toEqual('Low usage')
-      thermostat.reset()
+      expect(thermostat.current_usage()).toEqual('low-usage')
+    });
+    it('shows medium usage', () => {
       thermostat.up(2)
-      expect(thermostat.current_usage()).toEqual('Medium usage')
-      thermostat.reset()
+      expect(thermostat.current_usage()).toEqual('medium-usage')
+    });
+    it('shows high usage', () => {
+      thermostat.turnOffPowerSave()
       thermostat.up(6)
-      expect(thermostat.current_usage()).toEqual('High usage')
+      expect(thermostat.current_usage()).toEqual('high-usage')
     });
   });
 });
