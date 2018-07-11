@@ -21,8 +21,14 @@ describe('Thermostat', () => {
         thermostat.turnOnPowerSave()
         thermostat.up(5)
         expect(function(){thermostat.up(1)}).toThrow(new Error('Power Save Mode limits temperature to 25.'))
-      })
-    })
+      });
+    });
+    describe('when power saving mode is off', () => {
+      it('should have a maximum temperature of 32', () => {
+        thermostat.up(12)
+        expect(function(){thermostat.up(1)}).toThrow(new Error('Maximum temperature is 32.'))
+      });
+    });
   });
 
   describe('.down', () => {
@@ -30,7 +36,7 @@ describe('Thermostat', () => {
       expect(thermostat.down(1)).toEqual(19)
     });
     it('error when lower than the minimum degree', () => {
-      expect(function() {thermostat.down(11)}).toThrow(new Error("Lower than minimum degree"))
+      expect(function() {thermostat.down(11)}).toThrow(new Error('Lower than minimum degree'))
     });
   });
 });
