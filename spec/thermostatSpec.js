@@ -39,4 +39,15 @@ describe('Thermostat', () => {
       expect(function() {thermostat.down(11)}).toThrow(new Error('Lower than minimum degree'))
     });
   });
+
+  describe('.reset', () => {
+    it('resets the temperature to 20', () => {
+      thermostat.up(4)
+      thermostat.reset()
+      expect(thermostat.temp()).toEqual(20)
+      thermostat.down(4)
+      thermostat.reset()
+      expect(thermostat.temp()).toEqual(20)
+    });
+  });
 });
