@@ -43,6 +43,7 @@ Thermostat.prototype.powerSave = function () {
 }
 
 Thermostat.prototype.turnOnPowerSave = function () {
+  if (this._temperature > POWER_SAVE_MAX) { this._temperature = POWER_SAVE_MAX }
   this._maximum = POWER_SAVE_MAX
   this._powerSave = true
 }
