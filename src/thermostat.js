@@ -59,10 +59,10 @@ Thermostat.prototype.reset = function () {
 
 Thermostat.prototype.current_usage = function () {
   if (this._temperature <= this._lowMax ) {
-    return 'low-usage'
+    return 'low-usage';
   } else if (this._temperature <= this._medMax) {
-    return 'medium-usage'
+    return 'medium-usage';
   } else {
-    return 'high-usage'
+    return 'high-usage';
   }
 }

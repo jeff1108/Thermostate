@@ -1,0 +1,155 @@
+body {
+    max-width: 500px;
+    margin: auto;
+    /* background: white; */
+    animation: bgcolor infinite 20s;
+}
+
+h1 {
+  font-family: American Typewriter;
+  font-size: 20px;
+  color: black;
+}
+
+@keyframes bgcolor{
+  0%
+  {
+      background:#e74c3c;
+  }
+  20%
+  {
+      background:#2980b9;
+  }
+  40%
+  {
+      background:#f39c12;
+  }
+  60%
+  {
+      background:#16a085;
+  }
+  80%
+  {
+      background:#34495e;
+  }
+  100%
+  {
+      background:#e74c3c;
+  }
+}
+
+p {
+    font-family: American Typewriter;
+    font-size: 20px;
+    color: black;
+}
+
+#temperature {
+  font-family: DIN alternate;
+  font-size: 60px;
+  border-bottom: 4px solid black;
+}
+
+#temp-down {
+  background-color: white;
+  color: black;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  border: 2px solid black;
+}
+
+#temp-down:hover {
+  background-color: white;
+  color: #33844d;
+  border: 2px solid #33844d;
+}
+
+#temp-up{
+  background-color: white;
+  color: black;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  border: 2px solid black;
+}
+
+#temp-up:hover {
+    background-color: white;
+    color: #c93638;
+    border: 2px solid #c93638;
+  }
+
+#psm-on {
+  background-color: white;
+  color: black;
+  padding: 2px 8px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  border: 2px solid black;
+}
+
+#psm-on:hover {
+  background-color: white;
+  color: #33844d;
+  border: 2px solid #33844d;
+}
+
+#psm-off {
+  background-color: white;
+  color: black;
+  padding: 2px 8px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  border: 2px solid black;
+
+}
+
+#psm-off:hover {
+    background-color: white;
+    color: #c93638;
+    border: 2px solid #c93638;
+  }
+
+#temp-reset {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 2px 8px;
+    border-radius: 8px;
+    border: 2px solid black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+}
+
+#temp-reset:hover {
+  background-color: white;
+  color: #cccc00;
+  border: 2px solid #cccc00;
+}
+
+.low-usage {
+  color: #33844d;
+}
+
+.medium-usage {
+  color: black;
+}
+
+.high-usage {
+  color: #c93638;
+}
