@@ -1,9 +1,7 @@
 # Thermostat Project
-<<<<<<< HEAD
+
 - Build the business logic to model a simple thermostate, and hook it up to a dynamic visual interface using jQuery - all within the browser.
-=======
-- Build the business logic to model a simple thermostate, and hook it up to a dynamic visual interface using jQuery - all within the browser. 
->>>>>>> 3814b4a3b505202d6c020d424c3aec7d651c8946
+- Build the business logic to model a simple thermostate, and hook it up to a dynamic visual interface using jQuery - all within the browser.
 - Finally, use JavaScript to fetch data from external sources and display that on the page - all right from the page.
 - Underpinning all this will be a new testing framework to help test-drive the JavaScript code - Jasmine.
 
@@ -26,14 +24,9 @@ $ open index.html
 * You can ask about the temperature to 20 with a reset functon
 * You can ask about the thermostat's current energy usage: <18 is low-usage, <25 is medium-usage, anything else is high-usage.
 * (Add an inferface, low-usage will be indicated with green, medium-usgae indicated with black, high-usage indicated with red.)
-<<<<<<< HEAD
-----
-## Learning Outcome
 
-=======
 
 ## Learning Outcome
->>>>>>> 3814b4a3b505202d6c020d424c3aec7d651c8946
 ### Topic Covered
 * JavaScript Prototype Constructor model
 * jQuery to change the DOM element
@@ -41,38 +34,23 @@ $ open index.html
 * Jasmine as test framework
 * CSS styling
 
-<<<<<<< HEAD
-----
-=======
-
->>>>>>> 3814b4a3b505202d6c020d424c3aec7d651c8946
 ## State of Completion
 ### Implement Functionality
 * Thermostat display the current temperature
 * It show error message when lower/higher than minimum/maximum degree
 * It can turn on/off saving power move
 * It can change the temperature
-<<<<<<< HEAD
 * It show temperature of different of different city by using API from OpenWeather
 * CSS styling
-=======
-* It show temperature of different of different city by using API from OpenWeather 
-* CSS styling 
->>>>>>> 3814b4a3b505202d6c020d424c3aec7d651c8946
+* It show temperature of different of different city by using API from OpenWeather
+* CSS styling
 
 
 ### What I would do next
 * Create a remote API ( build on web server to provide this API using Sintra )
 * Save the selected city information using API
-<<<<<<< HEAD
-----
-
-## Technical
-=======
-
 
 ## Technical 
->>>>>>> 3814b4a3b505202d6c020d424c3aec7d651c8946
 ### Tech
 * JavaScript, Jasmine
 * OpenWeather API
